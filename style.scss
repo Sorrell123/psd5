@@ -1,0 +1,1040 @@
+$logoGrey: #474747;
+$ligthGrey: #dcdcdc;
+$backgroundColor: #fefefe;
+$galleryNameGrey: #404040;
+$textGrey: #dadada;
+$grey: #767676;
+$background: #f6f6f6;
+$projectBarMargin: 10px 0 10px 0;
+
+.clear{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexCenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer{
+	background-color: $background;
+}
+
+//HOME PAGE
+
+.logoSection{
+	padding: 30px 30px;
+
+	&--logo{
+		font-size: 30px;
+		letter-spacing: 3px;
+		padding: 10px 10px;
+
+		&:link, &:visited{
+			color: $logoGrey;
+			text-decoration: none;
+		}
+
+		&:hover, &:active{
+			background-color: $logoGrey;
+			color: white;
+		}
+	}
+}
+
+//MENU FOR
+
+.menuContainer{
+	padding: 20px 20px;
+
+	.menuList{
+		padding: 0 0;
+
+		&__item{
+			display: inline-block;
+			text-decoration: none;
+			padding: 0 20px;
+
+			&--paragraph{
+				color: $ligthGrey;
+			}
+
+			&--link{
+				font-size: 20px;
+				text-transform: uppercase;
+				padding: 5px 10px;
+				padding-left: 0;
+
+				&:link, &:visited{
+					color: $logoGrey;
+					text-decoration: none;
+				}
+
+				&:hover, &:active{
+					background-color: $logoGrey;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+//MENU END
+
+
+.firstSection{
+	height: 425px;
+	background-image: url("picture/mainSlider_03.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	&__sign{
+		height: 80px;
+		width: 220px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: $galleryNameGrey;
+
+		&--firstParagraph{
+			color: white;
+			padding: 5px 5px;
+			margin: 0 0;
+			text-transform: uppercase;
+			font-size: 12px;
+		} 
+
+		&--secondParagraph{
+			color: white;
+			padding: 5px 5px;
+			margin: 0 0;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+	}
+
+	&__counters{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		.first{
+			background-color: $galleryNameGrey;
+		}
+
+		&--counter{
+			padding: 0 20px;
+			border: 1px solid $galleryNameGrey;
+			font-size: 10px;
+
+			&:link{
+				background-color: white;
+			} 
+
+			&:hover, &:active{
+				background-color: $galleryNameGrey;
+			}
+
+			& span{
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.secondSection{
+	margin: 10px 0;
+	background-color: $background;
+	padding: 10px;
+
+	&--title{
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+
+	&--text{
+		font-size: 20px;
+		color: $grey;
+	}
+}
+
+.thirdSection{
+	padding: 0 0;
+
+	.one{	
+			border-right: 5px solid white;
+		}
+
+		.two{
+			border-left: 5px solid white;
+			border-right: 5px solid white;
+		}
+
+		.three{
+			border-left: 5px solid white;
+		}
+
+	.infoSection{
+	background-color: $background;
+
+		&__title{
+			font-size: 0;
+			color: $logoGrey;
+
+			&--fontAwesome{
+				width: 20%;
+				display: inline-block;
+				font-size: 45px;
+				text-align: center;
+				margin: 0 0;
+				position: relative;
+				bottom: 10px;
+			}
+
+			&--text{
+				width: 80%;
+				display: inline-block;
+				font-size: 25px;
+				margin: 0 0;
+			}	
+		}
+
+		&--text{
+			color: $grey;
+			font-size: 20px;
+		}
+
+		&__linkContainer{
+			text-align: right;
+
+			&--link{
+				font-size: 20px;
+				font-weight: bold;
+				color: black;
+
+				&:link, &:visited{
+					color: black;
+					text-decoration: none;
+					padding: 0 10px;
+				}
+
+				&:hover, &:active{
+					background-color: $logoGrey;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.fourthSection{
+	padding: 0 0;
+	margin: 60px 0;
+
+	.workHeadContainer{
+		padding: 0 0;
+
+		&--leftBar{
+			font-size: 35px;
+			background-color: $ligthGrey;
+
+			& span{
+				visibility: hidden;
+			}
+		}
+
+		&--sign{
+			font-size: 35px;
+			text-align: center;
+		}
+
+		&--rightBar{
+			font-size: 35px;
+			background-color: $ligthGrey;
+
+			& span{
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.fifthSection{
+	padding: 0 0;
+
+	.one{	
+		border-right: 5px solid white;
+	}
+
+	.two{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.three{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.four{
+		border-left: 5px solid white;
+	}
+
+	.workContainer{
+		padding: 0 0;
+		background-color: $background;
+
+		&__pictureSection{
+
+			&--picture{
+				width: 100%;
+				height: 150px;
+			}
+		}
+
+		&--title{
+			padding: 10px 10px;
+			font-size: 25px;
+		}
+
+		&--text{
+			padding: 10px 10px;
+			font-size: 20px;
+			color: $grey;
+		}
+
+		&__linkContainer{
+			padding: 10px 10px;	
+			text-align: right;
+
+			&--link{
+				font-size: 20px;
+				font-weight: bold;
+				color: black;
+
+				&:link, &:visited{
+					color: black;
+					text-decoration: none;
+					padding: 0 10px;
+				}
+
+				&:hover, &:active{
+					background-color: $logoGrey;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+//FOOTER FOR ALL
+.sixthSection{
+	margin: 50px 0 0 0;
+	width: 100%;
+	background-color: $background;
+	height: 100px;
+	border-top: 3px solid $grey;
+
+	.footerContainer{
+
+		&__leftText{
+			
+			&--paragraph{
+				font-size: 20px;
+				color: $grey;
+
+				& span{
+					color: black;
+				}
+			}
+		}
+
+		&__rightText{
+
+			&--paragraph{
+				font-size: 20px;
+				text-align: right;
+				color: $grey;
+
+				& span{
+					color: black;
+				}
+			}
+		}
+	}
+}
+//FOOTER END
+
+//ABOUT AS
+
+.aboutFirstSection{
+	background-color: $background;
+
+	&--title{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&--text{
+		font-size: 20px;
+		color: $grey;
+	}
+}
+
+.aboutSecondSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 20px;
+		background-color: $ligthGrey;
+		margin: 30px 0;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
+
+.aboutThirdSection{
+	padding: 0 0;
+
+	.one{	
+		border-right: 5px solid white;
+	}
+
+	.two{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.three{
+		border-left: 5px solid white;
+	}
+
+	.describeContainer{
+		background-color: $background;
+
+		&--title{
+			font-size: 25px;
+			text-transform: uppercase;
+		}
+
+		&--introText{
+			color: $grey;
+			font-size: 15px;
+		}
+
+		&--text{
+			font-size: 15px;
+		}
+	}
+}
+
+.aboutFourthSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 20px;
+		background-color: $ligthGrey;
+		margin: 30px 0;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
+
+.aboutFifthSection{
+	padding: 0 0;
+
+	.one{	
+		border-right: 5px solid white;
+	}
+
+	.two{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.three{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.four{
+		border-left: 5px solid white;
+	}
+
+	.crewContainer{
+		background-color: $background;
+		padding: 0 0;
+
+		&__pictureSection{
+
+			&--picture{
+				width: 100%;
+			}
+		}
+
+		&__nameSection{
+			padding: 15px 15px;
+			font-size: 0;
+
+			&--name{
+				width: 50%;
+				font-size: 15px;
+				text-transform: uppercase;
+				display: inline-block;
+
+				& span{
+					color: $grey;
+					display: block;
+				}
+			}
+
+			&--number{
+				width: 50%;
+				font-size: 15px;
+				text-align: right;
+				display: inline-block;
+			}
+		}
+
+		&--description{
+			padding: 15px 15px;
+		}
+	}	
+}
+
+//PROJECT
+
+.projectFirstSection{
+	background-color: $background;
+
+	&--title{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&--text{
+		font-size: 20px;
+		color: $grey;
+	}
+}
+
+.projectSecondSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
+
+.projectThirdSection{
+		padding: 0 0;
+	&__list{
+			padding: 0 0;
+
+		&--item{
+			display: inline-block;
+			text-decoration: none;
+
+			& a{
+				text-transform: uppercase;
+				font-size: 20px;
+
+				&:link, &:visited{
+					color: black;
+					text-decoration: none;
+				}
+
+				&:hover, &:active{
+					color: $ligthGrey;
+				}
+			}
+		}
+	}
+}
+
+.projectFourthSection{
+	padding: 0 0;
+	margin: 20px 0;
+
+	.one{	
+		border-right: 5px solid white;
+	}
+
+	.two{
+		border-left: 5px solid white;
+		border-right: 5px solid white;
+	}
+
+	.three{
+		border-left: 5px solid white;
+	}
+
+	&__infoContainer{
+		padding: 0 0;
+		background-color: $background;
+
+		&--picture1{
+			height: 150px;
+			width: 100%;
+			background-image: url("picture/workPictures_01.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 150px;
+			}
+		}
+
+		&--picture2{
+			height: 250px;
+			width: 100%;
+			background-image: url("picture/weddingForProjects.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 250px;
+			}
+		}
+
+		&--picture3{
+			height: 150px;
+			width: 100%;
+			background-image: url("picture/workPictures_04.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 150px;
+			}
+		}
+
+		&--picture4{
+			height: 150px;
+			width: 100%;
+			background-image: url("picture/mainSlider_03.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 150px;
+			}
+		}
+
+		&--picture5{
+			height: 250px;
+			width: 100%;
+			background-image: url("picture/workPictures_02.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 250px;
+			}
+		}
+
+		&--picture6{
+			height: 150px;
+			width: 100%;
+			background-image: url("picture/workPictures_03.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+
+			& a{
+				display: block; //WAZNE W TEJ SZTUCZCE
+				text-indent: -9999px;
+				width: 100%;
+				height: 150px;
+			}
+		}
+
+		&--title{
+			padding: 5px 10px;
+			font-size: 20px;
+			text-transform: uppercase;
+
+			& a{
+				display: block;
+
+				&:link, &:visited, &:hover, &:active{
+					color: $grey;
+					text-decoration: none;
+				}
+			}
+		}
+
+		&--text{
+			padding: 0 10px;
+			font-size: 15px;
+		}
+	}
+}
+
+.projectFourthSection{
+
+	.first{
+		background-color: $galleryNameGrey;
+	}
+
+	&--counter{
+			padding: 0 20px;
+			border: 1px solid $galleryNameGrey;
+			font-size: 10px;
+
+			&:link{
+				background-color: white;
+			} 
+
+			&:hover, &:active{
+				background-color: $galleryNameGrey;
+			}
+
+			& span{
+				visibility: hidden;
+			}
+		}
+}
+
+//FOR ALL !ALMOST ALL!
+
+.rightInfoFirstSection{
+
+	&--title{
+		font-size: 20px;
+		text-transform: uppercase;
+		margin: 70px 0 0 0;
+		background-color: $background;
+		padding: 10px 10px;
+	}
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+
+	&--text{
+		font-size: 15px;
+		background-color: $background;
+		padding: 10px 10px;
+	}
+}
+
+.rightInfoSecondSection{
+	margin: 50px 0;
+
+	&--title{
+		font-size: 20px;
+		text-transform: uppercase;
+		background-color: $background;
+		padding: 10px 10px;
+	}
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+
+	&__list{
+		background-color: $background;
+		padding: 10px 10px;
+
+		&--item{
+			list-style: none;
+		}
+	}
+}
+
+.rightInfoThirdSection{
+
+	&--title{
+		font-size: 20px;
+		text-transform: uppercase;
+		background-color: $background;
+		padding: 10px 10px;
+	}
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+
+	&--tweet{
+		font-size: 15px;
+		background-color: $background;
+		padding: 10px 10px;
+		margin: 0 0;
+
+		& span{
+			color: $grey;
+		}
+	}
+
+	&--follow{
+		font-size: 20px;
+		padding: 10px 10px;
+		background-color: $background;
+
+		& span{
+			color: $grey;
+		}
+	}
+}
+
+//END FOR ALL !ALMOST ALL!
+
+//CONTACT US
+
+.contactFirstSection{
+	background-color: $background;
+
+	&--title{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&--text{
+		font-size: 20px;
+		color: $grey;
+	}
+}
+
+.contactSecondSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
+
+.contactThirdSection{
+	font-size: 20px;
+	font-weight: bold;
+	background-color: $background;
+
+	& span{
+		display: block;
+		margin-top: 20px;
+		font-size: 15px;
+		font-weight: normal;
+		color: $grey;
+	}
+}
+
+.contactFourthSection{
+	padding: 0 0;
+
+	&__form{
+		padding: 0 0;
+
+		&--input{
+			display: block;
+			margin: 20px 0;
+		}
+
+		&--submit{
+			display: block;
+			margin: 20px 0;
+			background-color: white;
+			border: 1px solid $grey;
+			font-size:20px;
+
+			&:hover{
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+
+// BLOG
+
+.blogFirstSection{
+	background-color: $background;
+
+	&--title{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&--text{
+		font-size: 20px;
+		color: $grey;
+	}
+}
+
+.blogSecondSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: $projectBarMargin;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
+
+
+
+.blogThirdSection{
+	padding: 0 0;
+	background-color: $background;
+
+	&--title{
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+
+	&__picture1{
+		background-image: url("picture/blogPictures_01.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 100% 100%;
+		height: 300px;
+
+		& a{
+			display: block;
+			text-indent: -9999px;
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&__picture2{
+		background-image: url("picture/blogPictures_02.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 100% 100%;
+		height: 300px;
+
+		& a{
+			display: block;
+			text-indent: -9999px;
+			width: 100% ;
+			height: 300px;
+		}
+	}
+
+	&__picture3{
+		background-image: url("picture/blogPictures_03.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 100% 100%;
+		height: 300px;
+
+		& a{
+			display: block;
+			text-indent: -9999px;
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&__describtionLeft{
+		padding: 0 0;
+		margin: 10px 0;
+
+		&--list{
+			padding: 0 0;
+			padding: 10px 10px;
+
+			& li{
+				margin: 10px 0;
+				list-style: none;
+				font-size: 15px;
+				font-weight: bold;	
+				& span{
+					font-weight: normal;
+					color: $grey;
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__describtionRight{
+		padding: 0 0 ;
+		margin: 10px 0;
+		&--text{
+			font-size: 15px;
+			font-weight: bold;
+			padding: 10px 10px;
+
+			& span{
+				font-weight: normal;
+				color: $grey;
+				display: block;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.blogSection{
+	padding: 0 0;
+
+	&--bar{
+		font-size: 10px;
+		background-color: $ligthGrey;
+		margin: 30px 0;;
+
+		& span{
+			visibility: hidden;
+		}
+	}
+}
